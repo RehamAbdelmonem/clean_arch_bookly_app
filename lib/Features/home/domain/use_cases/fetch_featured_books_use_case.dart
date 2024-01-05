@@ -4,7 +4,7 @@ import 'package:bookly/core/use_cases/use_case.dart';
 import 'package:dartz/dartz.dart';
 import '../entities/book_entity.dart';
 
-class FetchFeaturedBooksUseCase extends UseCase<List<BookEntity> , NoParam> {
+class FetchFeaturedBooksUseCase extends UseCase<List<BookEntity>, NoParam> {
   final HomeRepo homeRepo;
 
   FetchFeaturedBooksUseCase(this.homeRepo);
@@ -14,5 +14,3 @@ class FetchFeaturedBooksUseCase extends UseCase<List<BookEntity> , NoParam> {
     return await homeRepo.fetchFeaturedBooks();
   }
 }
-
-
